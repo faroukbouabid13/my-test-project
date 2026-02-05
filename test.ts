@@ -1,3 +1,3 @@
-const x = 45452;
-const y =335;
-const f =44;
+function add(d: number, c: number) {
+  return c + d;
+}
