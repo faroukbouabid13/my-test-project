@@ -7,6 +7,6 @@ function sum(d: number, c: number) {
 function alpha() {
   return 'a';
 }
-function beta() {
-  return 'b';
+function delta() {
+  return 'd';
 }
