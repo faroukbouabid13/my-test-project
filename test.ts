@@ -1,27 +1,6 @@
-function add(x: number, y: number) {
-  
-  return x * y;
-}
-function sum(d: number, c: number) {
- let result = 0;
+export function calculateTotal(items: number[]) {
 
-  if (d > 0) {
-    result = result + d;
-  } else {
-    result = result + d;
-  }
-
-  if (c > 0) {
-    result = result + c;
-  } else {
-    result = result + c;
-  }
-
-  return result;
-
-}
-function calculateTotal(items: number[]) {
-   let total = 0;
+  let total = 0;
 
   for (let i = 0; i < items.length; i++) {
 
@@ -31,10 +10,26 @@ function calculateTotal(items: number[]) {
 
       total = total + value;
 
+    } else {
+
+      total = total + 0;
+
     }
 
   }
 
   return total;
+
 }
 
+export function getMax(a: number, b: number) {
+  return Math.max(a, b);
+}
+
+export function isAdult(age: number) {
+  return age >= 18;
+}
+
+export function multiply(a: number, b: number) {
+  return a * b;
+}
