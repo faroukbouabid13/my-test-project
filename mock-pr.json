@@ -1,0 +1,27 @@
+{
+  "number": 42,
+  "title": "Refactor utility functions for performance",
+  "body": "This PR refactors several utility functions. Some functions still use manual for-loops and while-loops instead of modern array methods. Need to improve performance and readability.",
+  "state": "open",
+  "author": "bouab",
+  "branch": "feature/refactor-utils",
+  "baseBranch": "main",
+  "createdAt": "2026-03-29T09:00:00Z",
+  "comments": [
+    {
+      "author": "senior-dev",
+      "body": "The findMaximumValue function uses a while-loop which is harder to read. Consider using reduce() instead.",
+      "createdAt": "2026-03-29T10:00:00Z"
+    },
+    {
+      "author": "tech-lead",
+      "body": "We should avoid manual index tracking. Array methods like map, filter and reduce are more maintainable.",
+      "createdAt": "2026-03-29T10:30:00Z"
+    },
+    {
+      "author": "senior-dev",
+      "body": "Also the calculateBiggest function starts max at 0 which is a bug for arrays with all negative numbers.",
+      "createdAt": "2026-03-29T11:00:00Z"
+    }
+  ]
+}
