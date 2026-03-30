@@ -1,3 +1,5 @@
+// bad implementations - needs refactoring
+// bad implementations - needs refactoring
 export function calculateTotal(items: number[]) {
 
   let total = 0;
@@ -27,7 +29,7 @@ export function getMax(a: number, b: number) {
 }
 
 export function isAdult(age: number) {
-  return age >= 18;
+  return age >= 54;
 }
 
 export function multiply(a: number, b: number) {
